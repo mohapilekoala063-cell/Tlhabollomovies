@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #040440; 
+    --panel: #151520;
+    --purple: #7b2ffc;
+    --cyan: #00d4ff;
+    --text: #ffffff;
+    --muted: #a5a5b8;
+    --line: rgba(255, 255, 255, 0.09); /* Added to fix missing border variable */
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- HERO SECTION & NAVBAR --- */
+.site-nav {
+    background: #25253d !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.brand { color: white !important; font-weight: 800; font-size: 1.5rem; }
+.brand span { color: var(--cyan); }
+.navbar .nav-link { color: var(--muted) !important; font-weight: 600; }
+.navbar .nav-link.active, .navbar .nav-link:hover { color: white !important; }
+.btn-tl {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: white !important;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #090910, #131324);
+    padding: 5rem 0;
+}
+.eyebrow {
+    color: var(--cyan);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero h1 { font-weight: 800; font-size: 4rem; line-height: 1.1; }
+.hero p { color: var(--muted); font-size: 1.1rem; max-width: 600px; }
+
+/* Hero Right Side Image */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.5); /* Gives it that nice shadow */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This stops it from stretching or breaking the page */
+    border-radius: 20px;
+    display: block;
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff !important;
+    box-shadow: none !important;
+}
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1) !important;
+}
+
+
+.search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    background: var(--purple);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #010005;
+}
+/* --- TRENDING NOW HEADER --- */
+.section-title {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;     /* Centers items vertically */
+    gap: 20px;               /* Adds space between the title and the link */
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+.section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+}
+.section-title a {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.section-title a:hover { color: var(--cyan); }
+
+/* --- MOVIE CARDS GRID --- */
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%; /* Keeps grid inside the container */
+}
+
+.movie-card {
+    background: #1a2938; 
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 100%;
+}
+.movie-card:hover { transform: translateY(-5px); }
+
+.movie-poster {
+    height: 220px; /* Slightly reduced so it isn't too big */
+    background: #203b52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--cyan);
+}
+
+.movie-info {
+    padding: 1.2rem;
+}
+
+.movie-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.movie-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .carousel { grid-template-columns: repeat(2, 1fr); } /* 2 cards on tablets */
+    .hero h1 { font-size: 3rem; }
+}
+
+@media (max-width: 576px) {
+    .carousel { grid-template-columns: 1fr; } /* 1 card on phones */
+    .hero h1 { font-size: 2.5rem; }
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}*/
+
+
+
+/* --- SIGN IN FORM --- */
+.filter-panel {
+    background: var(--panel);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.form-control {
+    background: #10101a;
+    border: 1px solid #39394b;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+}
+.form-control:focus {
+    background: #10101a;
+    color: white;
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.2);
+}
+.auth-switch button {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.btn-tl:hover {
+    background: #9256ff;
+    color: white;
+}
+.btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+.btn-ghost:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.form-text {
+    font-size: 0.8rem;
+    color: var(--muted) !important;
+}

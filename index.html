@@ -1,0 +1,371 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | TLHABOLLO</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/guard.js"></script>
+</head>
+
+<body>
+   
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container py-2">
+
+        <!-- Brand Logo and Name -->
+        <a class="navbar-brand brand d-flex align-items-center gap-2" href="index.html">
+            <span class="brand-logo">T</span>
+            <span>TLHABOLLO<span class="brand-dot">.</span></span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mylist.html">My List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tl btn-sm" href="signin.html">
+                        Log In / Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+    <div class="container py-3">
+        <div class="search-box">
+            <input type="text" id="movieSearch" class="flex-grow-1" style="min-width:0;" placeholder="Search movies...">
+
+            <button type="button">
+                <i class="bi bi-search"></i> Search
+            </button>
+        </div>
+    </div>
+ 
+<main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="hero">
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <!-- LEFT SIDE: TEXT AND RATING -->
+                <div class="col-lg-5">
+
+                    <div class="eyebrow mb-3">
+                        Stream your favourite movies and series
+                    </div>
+
+                    <h1>
+                        Stories that refresh your
+                        <span style="color: var(--cyan);">MIND.</span>
+                    </h1>
+
+                    <p class="my-4">
+                        Discover exciting movies, series and documentaries
+                        in one place. Explore your next favourite story
+                        with TLHABOLLO.
+                    </p>
+
+                    <!-- RATE US -->
+                    <div class="rate text-center text-lg-start">
+                        <strong>RATE US</strong>
+
+                        <div class="rating">
+                            <i class="bi bi-star-fill" data-value="1"></i>
+                            <i class="bi bi-star-fill" data-value="2"></i>
+                            <i class="bi bi-star-fill" data-value="3"></i>
+                            <i class="bi bi-star-fill" data-value="4"></i>
+                            <i class="bi bi-star-fill" data-value="5"></i>
+                        </div>
+
+                        <p id="ratingMessage">Click to rate us</p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE: MOVIE IMAGE -->
+                <div class="col-lg-7">
+
+                    <div class="hero-image">
+                        <img
+                            src="wakanda.webp"
+                            alt="Featured movie"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+  
+    </header>
+
+
+<!-- TRENDING NOW SECTION -->
+ <section class="container py-5">
+
+        <div class="section-title">
+            <h2>
+                <i class="bi bi-fire"></i>
+                Trending Now
+            </h2>
+
+            <a href="movies.html">
+                MORE MOVIES
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+    <div class="carousel">
+
+        <!-- black panther -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="wakanda.webp"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="Black_Panther_720P.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>Black Panther</h3>
+
+                <div class="movie-meta">
+                    <span class="year">2021</span>
+                    <span>Action, Adventure, Sci-Fi</span>
+                </div>
+
+                <p>
+                    The Avengers unite for one final mission to reverse
+                    the destruction caused by Thanos and save the universe.
+                </p>
+
+                <p><strong>Genre:</strong> Action, Adventure, Sci-Fi</p>
+
+                <a href="Black_Panther_720P.mp4"
+                   class="btn btn-tl"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+
+                <a href="Black_Panther_720P.mp4"
+                   class="btn btn-ghost"
+                   download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- THOR: RAGNAROK -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="thor.jpg"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="_Thor__Ragnarok__Official_Trailer(1080p).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>Thor: Ragnarok</h3>
+
+                <div class="movie-meta">
+                    <span class="year">2017</span>
+                    <span>Action, Adventure, Fantasy</span>
+                </div>
+
+                <p>
+                    Thor must escape imprisonment and stop Hela from
+                    destroying Asgard.
+                </p>
+
+                <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+
+                <a href="_Thor__Ragnarok__Official_Trailer(1080p).mp4"
+                   class="btn btn-tl"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+
+                <a href="_Thor__Ragnarok__Official_Trailer(1080p).mp4"
+                   class="btn btn-ghost"
+                   download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+        <!-- SPIDER-MAN: NO WAY HOME -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="spider.jpg"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="SPIDER-MAN__NO_WAY_HOME_-_Official_Trailer__HD_(1080p).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>Spider-Man: No Way Home</h3>
+
+                <div class="movie-meta">
+                    <span class="year">2021</span>
+                    <span>Action, Adventure, Fantasy</span>
+                </div>
+
+                <p>
+                    Peter Parker asks Doctor Strange for help after
+                    his identity as Spider-Man is revealed.
+                </p>
+
+                <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+
+                <a href="SPIDER-MAN__NO_WAY_HOME_-_Official_Trailer__HD_(1080p).mp4"
+                   class="btn btn-tl"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+
+                <a href="SPIDER-MAN__NO_WAY_HOME_-_Official_Trailer__HD_(1080p).mp4"
+                   class="btn btn-ghost"
+                   download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+        <footer class="site-footer">
+        <div class="container d-flex flex-wrap justify-content-between align-items-start gap-4">
+            <div>
+                <strong class="text-white">TLHABOLLO.</strong>
+                <p class="mb-2 small">Your next story starts here.</p>
+                <div class="small">
+                    <p class="mb-1"><i class="bi bi-whatsapp"></i> WhatsApp: 57880821</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill"></i> Tel: 63457865</p>
+                    <p class="mb-0"><i class="bi bi-envelope-fill"></i> Email: tlabollo33@gmail.com</p>
+                </div>
+            </div>
+
+            <div>
+                <strong class="text-white d-block mb-2">Quick Links</strong>
+                <div class="d-flex flex-column gap-1">
+                    <a href="index.html">Home</a>
+                    <a href="movies.html">Movies</a>
+                    <a href="mylist.html">My List</a>
+                    <a href="about.html">About</a>
+                    <a href="about.html#help">Help</a>
+                    <a href="signin.html">Log In / Sign Up</a>
+                </div>
+            </div>
+
+            <div>
+                <strong class="text-white d-block mb-2">Follow Us</strong>
+                <div class="d-flex flex-column gap-1 small">
+                    <a href="https://facebook.com" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> @tlhabollo</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> @tlhabollo</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i> @tlhabollo</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"><i class="bi bi-youtube"></i> @tlhabollo</a>
+                </div>
+            </div>
+
+            <div class="small align-self-end">&copy; 2026 TLHABOLLO.</div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <div id="siteMessage" class="notice d-none my-3" role="status"></div>
+    </div>
+
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailsTitle">Title details</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+
+                <div class="modal-body">
+                    <p id="detailsMeta" class="text-info small"></p>
+                    <p id="detailsDescription" class="muted"></p>
+                    <p class="small muted">
+                        TLHABOLLO is a student demonstration and does not host copyrighted films.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="detailsAdd" class="btn btn-tl">Add to My List</button>
+                    <a
+                        id="trailerLink"
+                        class="btn btn-ghost"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Watch sample video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/forms.js"></script>
+
+<script src="js/nav-active.js"></script>
+
+</body>
+</html>

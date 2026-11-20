@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies | TLHABOLLO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/guard.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container py-2">
+
+        <!-- Brand Logo and Name -->
+        <a class="navbar-brand brand d-flex align-items-center gap-2" href="index.html">
+            <span class="brand-logo">T</span>
+            <span>TLHABOLLO<span class="brand-dot">.</span></span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mylist.html">My List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tl btn-sm" href="signin.html">
+                        Log In / Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+    <div class="container py-3">
+        <div class="search-box">
+            <input type="text" id="movieSearch" class="flex-grow-1" style="min-width:0;" placeholder="Search movies..." aria-label="Search movies">
+            <button type="button"><i class="bi bi-search"></i> Search</button>
+        </div>
+    </div>
+
+<main>
+    <!-- INTRODUCTION -->
+    <section class="container py-5">
+        <div class="section-title"><h2><i class="bi bi-film"></i>Movies</h2></div>
+        <p>Welcome to TLHABOLLO. enjoy our movie collection, choose your favourite genre and download your movies.<BR>
+             <span style="color: var(--cyan);">RE TLA U HLABOLLA!!!!</span>
+</p>
+    </section>
+
+    <!-- GENRE NAVIGATION -->
+    <section class="container py-4" id="genre-nav">
+        <div class="section-title"><h2>Browse by Genre</h2></div>
+        <div class="d-flex flex-wrap gap-3">
+            <a href="#romance" class="btn btn-tl"><i class="bi bi-heart-fill"></i> Romance</a>
+           <a href="action.html" class="btn btn-tl">
+            <i class="bi bi-lightning-fill"></i> Action
+              </a>
+
+                <a href="horror.html" class="btn btn-tl">
+              <i class="bi bi-emoji-dizzy-fill"></i> Horror
+            </a>
+            <a href="#KASISTORIES" class="btn btn-tl"><i class="bi bi-emoji-dizzy-fill"></i> Kasi stories</a>
+        </div>
+    </section>
+
+    <!-- ROMANCE MOVIES -->
+    <section class="container py-5" id="romance">
+        <div class="section-title"><h2><i class="bi bi-heart-fill"></i> Romance Movies</h2></div>
+        <div class="carousel">
+            <!-- ROMANCE 1 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="KWABABA.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Bahumi_and_Zwelakhe’s_Mahlabiso_Invite___Kwa_Baba___Mzansi_Magic(1080p).mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Kwa Baba</h3>
+                    <div class="movie-meta">
+                        <span class="year">2026</span>
+                        <span>Romance, Drama</span>
+                    </div>
+                    <p>A beautiful love story about two people who discover love, trust and happiness.</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <a href="Bahumi_and_Zwelakhe’s_Mahlabiso_Invite___Kwa_Baba___Mzansi_Magic(1080p).mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Zwelakhe_says_his_goodbyes__Kwa_Baba___S1___Ep_65___Mzansi_Magic(1080p).mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <!-- ROMANCE 2 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="love of.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Love_of_Your_Life_2026_(2026)_BluRay_high_(fzmovies.net)_ebcd46ba58ea78fe952b90d1380ed8bd.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Love of Your Life</h3>
+                    <div class="movie-meta">
+                        <span class="year">2024</span>
+                        <span>Romance, Drama</span>
+                    </div>
+                    <p>Maya, a wry nurse is swept up in a life altering romance but she soon finds herself dealing with grief and redicovering true love.</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <a href="Love_of_Your_Life_2026_(2026)_BluRay_high_(fzmovies.net)_ebcd46ba58ea78fe952b90d1380ed8bd.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Love_of_Your_Life_2026_(2026)_BluRay_high_(fzmovies.net)_ebcd46ba58ea78fe952b90d1380ed8bd.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <!-- ROMANCE 3 -->
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="anora..jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Getting_Divorced_Scene___ANORA__2024__Movie_CLIP_HD(144p).mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>ANORA</h3>
+                    <div class="movie-meta">
+                        <span class="year">2023</span>
+                        <span>Romance, Comedy, Drama</span>
+                    </div>
+                    <p>A young woman from New York, Anora, marries the son of a wealthy Russian oligarch but her happy ending is threatened when her husband's parents try to get the marriage annulled.</p>
+                    <p><strong>Genre:</strong> Romance, Comedy, Drama</p>
+                    <a href="Getting_Divorced_Scene___ANORA__2024__Movie_CLIP_HD(144p).mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Getting_Divorced_Scene___ANORA__2024__Movie_CLIP_HD(144p).mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <!-- MORE ROMANCE (hidden until "View more" is pressed) -->
+            <!-- The Notebook -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="the_notebook.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="The_Notebook_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>The Notebook</h3>
+                    <div class="movie-meta">
+                        <span class="year">2004</span>
+                        <span>Romance, Drama</span>
+                    </div>
+                    <p>A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom.</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <a href="The_Notebook_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="The_Notebook_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <!-- Me Before You -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="me_before_you.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Me_Before_You_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Me Before You</h3>
+                    <div class="movie-meta">
+                        <span class="year">2016</span>
+                        <span>Romance, Drama</span>
+                    </div>
+                    <p>A girl in a small town forms an unlikely bond with a recently-paralyzed man she is taking care of.</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <a href="Me_Before_You_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Me_Before_You_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <!-- Titanic -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="titanic.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Titanic_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Titanic</h3>
+                    <div class="movie-meta">
+                        <span class="year">1997</span>
+                        <span>Romance, Drama</span>
+                    </div>
+                    <p>A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious R.M.S. Titanic.</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <a href="Titanic_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Titanic_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4" data-more-wrap>
+            <button type="button" class="btn btn-ghost" data-more aria-expanded="false" data-label="Romance Movies">
+                <i class="bi bi-chevron-down"></i> View more Romance Movies
+            </button>
+        </div>
+        <div class="text-end mt-4">
+            <a href="#genre-nav" class="btn btn-tl btn-sm">
+                <i class="bi bi-arrow-up"></i> Back to Genres
+            </a>
+        </div>
+    </section>
+
+    <!-- KASI STORIES -->
+<section class="container py-5" id="KASISTORIES">
+    <div class="section-title">
+        <h2><i class="bi bi-house-heart-fill"></i> Kasi Stories</h2>
+    </div>
+
+    <div class="carousel">
+
+        <!-- KASI STORY 1 -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="abafa ababi.jpg"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="Abafana_Ababi_2_FULL_MOVIE_720P_2026(240p).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>ABAFANA ABABI</h3>
+                <div class="movie-meta">
+                    <span class="year">2025</span>
+                    <span>Kasi, Crime, Drama</span>
+                </div>
+                <p>
+                    A gripping township crime story about brotherhood, street life,
+                    difficult choices and the consequences of living a dangerous lifestyle.
+                </p>
+                <p><strong>Genre:</strong> Kasi, Crime, Drama</p>
+                <a href="Abafana_Ababi_2_FULL_MOVIE_720P_2026(240p).mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+                <a href="Abafana_Ababi_2_FULL_MOVIE_720P_2026(240p).mp4" class="btn btn-ghost" download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- KASI STORY 2 -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="number number.jpg"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="iNumber_Number_-_Avenged__2013____Full_Movie(240p).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>INUMBER NUMBER</h3>
+                <div class="movie-meta">
+                    <span class="year">2024</span>
+                    <span>Kasi, Action, Crime</span>
+                </div>
+                <p>
+                    A thrilling South African crime story involving undercover operations,
+                    dangerous criminals, betrayal and the fight for justice.
+                </p>
+                <p><strong>Genre:</strong> Kasi, Action, Crime</p>
+                <a href="iNumber_Number_-_Avenged__2013____Full_Movie(240p).mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+                <a href="iNumber_Number_-_Avenged__2013____Full_Movie(240p).mp4" class="btn btn-ghost" download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- KASI STORY 3 -->
+        <div class="movie-card">
+            <div class="movie-poster">
+                <video controls preload="none" poster="umlazi.jpg"
+                       style="width:100%; height:100%; object-fit:cover;">
+                    <source src="Umlazi_Gangster_2_[Full_Movie](240p).mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+
+            <div class="movie-info">
+                <h3>UMLAZI GANGATERS 2</h3>
+                <div class="movie-meta">
+                    <span class="year">2023</span>
+                    <span>Kasi, Crime, Drama</span>
+                </div>
+                <p>
+                    A dramatic township gangster story filled with crime, gang conflicts,
+                    loyalty, revenge and the struggle to survive in the streets of Umlazi.
+                </p>
+                <p><strong>Genre:</strong> Kasi, Crime, Drama</p>
+                <a href="Umlazi_Gangster_2_[Full_Movie](240p).mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                    <i class="bi bi-play-circle"></i> Watch Trailer
+                </a>
+                <a href="Umlazi_Gangster_2_[Full_Movie](240p).mp4" class="btn btn-ghost" download>
+                    <i class="bi bi-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- MORE KASI STORIES (hidden until "View more" is pressed) -->
+        <!-- Tsotsi -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="tsotsi.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Tsotsi_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Tsotsi</h3>
+                    <div class="movie-meta">
+                        <span class="year">2005</span>
+                        <span>Kasi, Crime, Drama</span>
+                    </div>
+                    <p>Six days in the violent life of a young Johannesburg gang leader who steals a car only to discover a baby in the back seat.</p>
+                    <p><strong>Genre:</strong> Kasi, Crime, Drama</p>
+                    <a href="Tsotsi_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Tsotsi_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+
+        <!-- Jerusalema -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="jerusalema.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Jerusalema_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Jerusalema</h3>
+                    <div class="movie-meta">
+                        <span class="year">2008</span>
+                        <span>Kasi, Crime, Drama</span>
+                    </div>
+                    <p>A young hoodlum from Soweto rises from petty crime to build a massive criminal empire in Hillbrow, Johannesburg.</p>
+                    <p><strong>Genre:</strong> Kasi, Crime, Drama</p>
+                    <a href="Jerusalema_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Jerusalema_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+
+        <!-- Four Corners -->
+            <div class="movie-card d-none" data-extra="yes">
+                <div class="movie-poster">
+                    <video controls preload="none" poster="four_corners.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        <source src="Four_Corners_Trailer.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <div class="movie-info">
+                    <h3>Four Corners</h3>
+                    <div class="movie-meta">
+                        <span class="year">2013</span>
+                        <span>Kasi, Crime, Drama</span>
+                    </div>
+                    <p>A reformed gang general returns to the Cape Flats and tries to keep a young chess prodigy away from street gang life.</p>
+                    <p><strong>Genre:</strong> Kasi, Crime, Drama</p>
+                    <a href="Four_Corners_Trailer.mp4" class="btn btn-tl" target="_blank" rel="noopener">
+                        <i class="bi bi-play-circle"></i> Watch Trailer
+                    </a>
+                    <a href="Four_Corners_Trailer.mp4" class="btn btn-ghost" download>
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </div>
+            </div>
+    </div>
+        <div class="text-center mt-4" data-more-wrap>
+            <button type="button" class="btn btn-ghost" data-more aria-expanded="false" data-label="Kasi Stories">
+                <i class="bi bi-chevron-down"></i> View more Kasi Stories
+            </button>
+        </div>
+    <div class="text-end mt-4">
+        <a href="#genre-nav" class="btn btn-tl btn-sm">
+            <i class="bi bi-arrow-up"></i> Back to Genres
+        </a>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container d-flex flex-wrap justify-content-between align-items-start gap-4">
+            <div>
+                <strong class="text-white">TLHABOLLO.</strong>
+                <p class="mb-2 small">Your next story starts here.</p>
+                <div class="small">
+                    <p class="mb-1"><i class="bi bi-whatsapp"></i> WhatsApp: 57880821</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill"></i> Tel: 63457865</p>
+                    <p class="mb-0"><i class="bi bi-envelope-fill"></i> Email: tlabollo33@gmail.com</p>
+                </div>
+            </div>
+
+            <div>
+                <strong class="text-white d-block mb-2">Quick Links</strong>
+                <div class="d-flex flex-column gap-1">
+                    <a href="index.html">Home</a>
+                    <a href="movies.html">Movies</a>
+                    <a href="mylist.html">My List</a>
+                    <a href="about.html">About</a>
+                    <a href="about.html#help">Help</a>
+                    <a href="signin.html">Log In / Sign Up</a>
+                </div>
+            </div>
+
+            <div>
+                <strong class="text-white d-block mb-2">Follow Us</strong>
+                <div class="d-flex flex-column gap-1 small">
+                    <a href="https://facebook.com" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> @tlhabollo</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> @tlhabollo</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i> @tlhabollo</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"><i class="bi bi-youtube"></i> @tlhabollo</a>
+                </div>
+            </div>
+
+            <div class="small align-self-end">&copy; 2026 TLHABOLLO.</div>
+        </div>
+    </footer>
+
+<!-- SITE MESSAGE -->
+<div class="container">
+    <div id="siteMessage" class="notice d-none my-3" role="status"></div>
+</div>
+
+<!-- MOVIE DETAILS MODAL -->
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsTitle">Title details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="detailsMeta" class="text-info small"></p>
+                <p id="detailsDescription" class="muted"></p>
+                <p class="small muted">TLHABOLLO is a student demonstration and does not host copyrighted films.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="detailsAdd" class="btn btn-tl">Add to My List</button>
+                <a id="trailerLink" class="btn btn-ghost" href="#" target="_blank" rel="noopener">Watch sample video</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/view-more.js"></script>
+
+<script src="js/nav-active.js"></script>
+
+</body>
+</html>
